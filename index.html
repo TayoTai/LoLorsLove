@@ -283,6 +283,32 @@
 
             </ul>
         </section>
+
+        <section class="tempo-namoro">
+            <h2>Tempo de Namoro ⏳</h2>
+            <p>Estamos juntos há:</p>
+            <p id="contador"></p>
+        </section>
+        
+        <script>
+            function atualizarContador() {
+                const dataInicio = new Date("2025-02-09T00:00:00"); // 🔴 Substitua pela data real do namoro
+                const agora = new Date();
+                const diferenca = agora - dataInicio;
+        
+                const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+        
+                document.getElementById("contador").innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+            }
+        
+            setInterval(atualizarContador, 1000);
+            atualizarContador();
+        </script>
+
+
     </main>
     <footer>
         <p>Feito com muito amor por você, Lorena! ❤️</p>
@@ -293,5 +319,6 @@
             document.getElementById("carta").classList.toggle("oculto");
         }
     </script>
+
 </body>
 </html>
