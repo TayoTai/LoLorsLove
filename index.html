@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Lorena ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/image/icon.jpg">
+    <style>
+        /* Configuração global */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    
+        /* Cabeçalho */
+        header {
+            background: rgba(255, 0, 76, 0.8);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        /* Conteúdo principal */
+        main {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        /* Seções principais */
+        .mensagem, .galeria, .cartas, .playlist, .frases, .poemas, .curiosidades {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;  /* Evita que fique muito largo em telas grandes */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+        }
+    
+        /* Estilização das imagens */
+        .fotos img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* Botões */
+        button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+    
+        button:hover {
+            background: #e91e63;
+        }
+    
+        /* Elementos ocultos */
+        .oculto {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+        }
+        .mostrar {
+    display: block;
+    opacity: 1;
+        }
+    
+        /* Rodapé */
+        footer {
+            background: rgba(255, 0, 76, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Para a Minha Linda Lorena ❤️</h1>
+    </header>
+    <main>
+        <section class="mensagem">
+            <h2>Meu Amor,</h2>
+            <p>Desde o momento em que te conheci, meu mundo se tornou mais brilhante. Sua presença ilumina meus dias, seu sorriso aquece minha alma e cada instante ao seu lado é um presente que a vida me deu.</p>
+        
+            <p>Você é a razão pela qual meus dias têm mais cor e meu coração bate mais forte. Cada palavra sua me envolve como um abraço, e cada olhar seu me faz sentir que estou exatamente onde deveria estar: ao seu lado.</p>
+        
+            <p>Nos seus gestos, encontro carinho; na sua voz, encontro paz; e no seu amor, encontro um lar. Você transformou minha vida de uma forma que nunca imaginei ser possível, e por isso sou eternamente grato.</p>
+        
+            <p>Prometo te amar, te apoiar e estar contigo em cada passo do caminho, nos dias de sol e nas tempestades. Pois o que sinto por você é imenso, verdadeiro e eterno.</p>
+        
+            <p>Te amo infinitamente, hoje e sempre! 💖</p>
+        </section>
+        
+        
+        <section class="cartas">
+            <h2>Minha Carta para Você</h2>
+            <p>Quer ler algumas palavras doces que escrevi para você?</p>
+            <button onclick="mostrarCarta()">Ler Carta</button>
+            <div id="carta" class="oculto carta-conteudo">
+                <p>Minha querida Lorena,</p>
+        
+                <p>
+                    Desde o momento em que nossos caminhos se cruzaram, senti que havia algo especial em você. Seu olhar, seu sorriso, 
+                    seu jeito único de tornar tudo ao seu redor mais bonito... Você ilumina os meus dias de uma forma que jamais imaginei 
+                    ser possível. É incrível como, mesmo à distância, consigo sentir sua presença tão próxima ao meu coração.
+                </p>
+        
+                <p>
+                    Cada palavra sua é um presente, cada mensagem um abraço apertado que aquece minha alma. Você me ensina a ver beleza 
+                    nos pequenos detalhes, a encontrar felicidade nas coisas mais simples e, acima de tudo, a acreditar no poder do amor. 
+                    Não há um único dia em que eu não pense em você, desejando estar ao seu lado para segurar sua mão e olhar em seus olhos, 
+                    dizendo o quanto você é importante para mim.
+                </p>
+        
+                <p>
+                    O que temos é mais do que simples palavras trocadas ou sentimentos passageiros. É uma conexão genuína, algo que 
+                    transcende qualquer obstáculo, qualquer distância. Você me faz sonhar com um futuro lindo, onde cada dia ao seu 
+                    lado seja uma nova página de uma história que escrevemos juntos.
+                </p>
+        
+                <p>
+                    Espero que, ao ler estas palavras, você consiga sentir pelo menos um pouco do que transborda em meu coração.  
+                    Obrigado por existir, por ser essa pessoa incrível e por me permitir fazer parte da sua vida. Um dia, espero 
+                    poder te dizer tudo isso olhando nos seus olhos e te abraçar forte, como sempre sonhei.
+                </p>
+        
+                <p>Com todo o meu amor,</p>
+                <p>Rafael</p>
+            </div>
+        </section>
+        
+        
+        <iframe 
+            src="https://open.spotify.com/embed/playlist/4HEL7XuomsnbjZivVM3hlN" 
+            width="300" 
+            height="380" 
+            frameborder="0" 
+            allowtransparency="true" 
+            allow="encrypted-media">
+        </iframe>
+        
+        <section class="frases">
+            <h2>Frases de Amor</h2>
+            <p>"O amor não se vê com os olhos, mas com o coração." - William Shakespeare</p>
+            <p>"O amor é a única coisa que cresce à medida que se reparte." - Antoine de Saint-Exupéry</p>
+            <p>"O melhor lugar do mundo é dentro do seu abraço." - Mario Quintana</p>
+            <p>"A vida é a arte do encontro, embora haja tanto desencontro pela vida." - Vinicius de Moraes</p>
+            <p>"O amor verdadeiro começa quando nada é esperado em troca." - Antoine de Saint-Exupéry</p>
+            <p>"Te amei ontem, te amo hoje e te amarei para sempre." - Machado de Assis</p>
+            <p>"Se eu pudesse escolher de novo, ainda escolheria você, sempre você." - Nicholas Sparks</p>
+            <p>"Nos olhos da pessoa amada, encontramos nosso verdadeiro lar." - Johann Goethe</p>
+            <p>"Cada mensagem sua é como um abraço na alma." - Cecília Meireles</p>
+            <p>"Você é a minha parte favorita de todos os dias." - Pablo Neruda</p>
+            <p>"Se amar você é um sonho, então nunca quero acordar." - Victor Hugo</p>
+            <p>"Com você, cada segundo é um pedaço de eternidade." - Fernando Pessoa</p>
+            <p>"O amor é feito de pequenos momentos que se tornam inesquecíveis." - Mario Quintana</p>
+            <p>"Não importa a distância, meu coração sempre encontrará o seu." - Pablo Neruda</p>
+            <p>"Você é aquela música que nunca me canso de ouvir." - Carlos Drummond de Andrade</p>
+            <p>"Meu lugar favorito no mundo é ao seu lado." - Vinicius de Moraes</p>
+            <p>"Te amar é a melhor decisão que já tomei na vida." - Machado de Assis</p>
+            <p>"O destino nos aproximou, mas é o amor que nos mantém juntos." - Johann Goethe</p>
+            <p>"Se o amor fosse uma viagem, eu escolheria percorrer o mundo ao seu lado." - Antoine de Saint-Exupéry</p>
+        </section>
+        
+        
+        
+        <section class="poemas">
+            <h2>Poema para Você</h2>
+            <h3>Nosso Amor Cereja 🍒</h3>
+            <p>
+                Lorena, meu céu, minha estrela cadente,<br>
+                Teu riso é um verso que ecoa na mente.<br>
+                Se eu for embora, me diz, por favor,<br>
+                Quem vai aquecer o frio do meu cobertor?<br><br>
+        
+                Seus olhos são chamas, me fazem voar,<br>
+                Mas temo o abismo de te magoar.<br>
+                O medo me cerca, mas ouve, meu bem,<br>
+                Sem teu abraço, não sou mais ninguém.<br><br>
+        
+                Nosso lance é louco, é fogo e paixão,<br>
+                Nosso amor cereja, doce tentação.<br>
+                Seus cabelos bagunçados, o feitiço perfeito,<br>
+                Te quero demais, és meu sonho eleito.<br><br>
+        
+                Então me segura, me faz acreditar,<br>
+                Que a gente é eterno, que vamos durar.<br>
+                Pois mesmo que tudo tente nos separar,<br>
+                No fim do caminho, eu volto a te amar.<br>
+            </p>
+        </section>
+        
+        <section class="curiosidades">
+            <h2>60 Coisas que Amo em Você</h2>
+            <ul>
+                <li>O jeito que sua presença ilumina meu dia, mesmo de longe</li>
+                <li>O jeito que me faz sentir confortável sendo eu mesmo(a)</li>
+                <li>Como nossas conversas nunca são entediantes</li>
+                <li>O carinho que você coloca em cada palavra</li>
+                <li>A vontade que me dá de tornar cada dia especial para nós</li>
+                <li>Como você se tornou essencial na minha vida</li>
+                <li>O amor que sinto por você</li>
+                <li>Como me faz querer te surpreender de alguma forma</li>
+                <li>O fato de que já é uma das pessoas mais importantes da minha vida</li>
+                <li>O jeito como deixa minha vida mais colorida</li>
+                <li>A ansiedade boa que sinto quando vou falar com você</li>        
+                <li>Seu jeito especial de me fazer sorrir</li>
+                <li>O apoio que me dá em qualquer momento</li>
+                <li>O brilho da sua personalidade que transparece em tudo</li>
+                <li>Como me faz sentir importante e especial</li>
+                <li>As conversas profundas que temos</li>
+                <li>A forma como compartilhamos sonhos juntos</li>
+                <li>O carinho nas suas mensagens</li>
+                <li>O jeito que demonstra afeto de um jeito só seu</li>
+                <li>Como mesmo longe, você está sempre presente</li>
+                <li>Seu jeitinho fofo e encantador</li>
+                <li>O fato de que podemos conversar sobre qualquer coisa</li>
+                <li>A forma como compartilhamos nossos dias</li>
+                <li>Como nossos sentimentos superam qualquer distância</li>
+                <li>O carinho que sinto por você a cada palavra</li>
+                <li>O fato de que penso em você o tempo todo</li>
+                <li>A cumplicidade que temos</li>
+                <li>Como você me faz acreditar no amor, mesmo à distância</li>
+                <li>O fato de que nunca me sinto sozinho(a) porque tenho você</li>
+                <li>O conforto que suas palavras me trazem</li>
+                <li>Como conseguimos ser tão conectados</li>
+                <li>O brilho único que tem na sua alma</li>
+                <li>A forma como você me inspira</li>
+                <li>O fato de que nossa conexão é tão especial</li>
+                <li>Como cada mensagem sua melhora meu dia</li>
+                <li>O carinho que sinto toda vez que falo com você</li>
+                <li>O quanto você me faz sentir vivo(a)</li>
+                <li>Como tudo fica mais bonito com você na minha vida</li>
+                <li>O jeito que me faz querer estar sempre perto, mesmo de longe</li>
+                <li>A felicidade que sinto só de pensar em você</li>
+                <li>O fato de que nunca fico cansado de conversar com você</li>
+                <li>A doçura que você tem no coração</li>
+                <li>Como conseguimos criar memórias mesmo sem nos vermos</li>
+                <li>O mistério de como alguém pode ser tão especial</li>
+                <li>A forma como você me faz sentir amado(a)</li>
+                <li>O jeito que você me faz querer planejar um futuro juntos</li>
+                <li>Como cada detalhe sobre você me encanta</li>
+                <li>O fato de que me faz querer te encontrar um dia</li>
+                <li>A certeza de que nosso encontro será mágico</li>
+                <li>O brilho dos seus olhos que me encanta</li>
+                <li>Seu sorriso perfeito que ilumina qualquer ambiente</li>
+                <li>O formato dos seus lábios</li>
+                <li>O jeito que seus olhos brilham</li>
+                <li>Seu cabelo lindo que combina perfeitamente com você</li>
+                <li>Suas expressões faciais que tornam tudo mais especial</li>
+                <li>O formato do seu nariz que acho lindo</li>
+                <li>O contorno do seu rosto que me hipnotiza</li>
+                <li>O seu brilho próprio, que ninguém mais tem</li>
+                <li>A forma como tudo em você parece simplesmente perfeito</li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Feito com muito amor por você, Lorena! ❤️</p>
+    </footer>
+    
+    <script>
+        function mostrarCarta() {
+            document.getElementById("carta").classList.toggle("oculto");
+        }
+    </script>
+</body>
+</html>
